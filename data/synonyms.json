@@ -1,0 +1,325 @@
+{
+  "version": "1.0.0",
+  "updated_on": "2026-08-22",
+  "_note": [
+    "Editable synonym dictionary. NFR-H: 'Kamus sinonim disimpan terpisah dan",
+    "bisa diperbarui tanpa deploy ulang' — this file is hot-reloaded on mtime",
+    "change, so edits take effect without restarting the service.",
+    "",
+    "'entries' map a user term to exactly one canonical value (FR-7).",
+    "'ambiguous' map a term to several candidates: the service refuses to guess",
+    "and returns needs_clarification with these as available_values (FR-9/FR-10).",
+    "That is how the Data Dictionary's open questions D2/D4/D5 are handled —",
+    "surfaced to the user rather than silently resolved."
+  ],
+
+  "entries": [
+    { "term": "tingkatan 1", "facet": "level", "canonical_value": "Form 1", "lang": "ms" },
+    { "term": "tingkatan 2", "facet": "level", "canonical_value": "Form 2", "lang": "ms" },
+    { "term": "tingkatan 3", "facet": "level", "canonical_value": "Form 3", "lang": "ms" },
+    { "term": "tingkatan 4", "facet": "level", "canonical_value": "Form 4", "lang": "ms" },
+    { "term": "tingkatan 5", "facet": "level", "canonical_value": "Form 5", "lang": "ms" },
+    { "term": "ting 4", "facet": "level", "canonical_value": "Form 4", "lang": "ms" },
+    { "term": "t4", "facet": "level", "canonical_value": "Form 4", "lang": "ms" },
+    { "term": "t5", "facet": "level", "canonical_value": "Form 5", "lang": "ms" },
+    { "term": "f1", "facet": "level", "canonical_value": "Form 1", "lang": "mixed" },
+    { "term": "f2", "facet": "level", "canonical_value": "Form 2", "lang": "mixed" },
+    { "term": "f3", "facet": "level", "canonical_value": "Form 3", "lang": "mixed" },
+    { "term": "f4", "facet": "level", "canonical_value": "Form 4", "lang": "mixed" },
+    { "term": "f5", "facet": "level", "canonical_value": "Form 5", "lang": "mixed" },
+    { "term": "form one", "facet": "level", "canonical_value": "Form 1", "lang": "en" },
+    { "term": "form four", "facet": "level", "canonical_value": "Form 4", "lang": "en" },
+    { "term": "form five", "facet": "level", "canonical_value": "Form 5", "lang": "en" },
+
+    { "term": "darjah 1", "facet": "level", "canonical_value": "Year 1", "lang": "ms" },
+    { "term": "darjah 2", "facet": "level", "canonical_value": "Year 2", "lang": "ms" },
+    { "term": "darjah 3", "facet": "level", "canonical_value": "Year 3", "lang": "ms" },
+    { "term": "darjah 4", "facet": "level", "canonical_value": "Year 4", "lang": "ms" },
+    { "term": "darjah 5", "facet": "level", "canonical_value": "Year 5", "lang": "ms" },
+    { "term": "darjah 6", "facet": "level", "canonical_value": "Year 6", "lang": "ms" },
+    { "term": "tahun 1", "facet": "level", "canonical_value": "Year 1", "lang": "ms" },
+    { "term": "tahun 4", "facet": "level", "canonical_value": "Year 4", "lang": "ms" },
+    { "term": "tahun 6", "facet": "level", "canonical_value": "Year 6", "lang": "ms" },
+    { "term": "standard 1", "facet": "level", "canonical_value": "Year 1", "lang": "en" },
+    { "term": "standard 6", "facet": "level", "canonical_value": "Year 6", "lang": "en" },
+    { "term": "primary 1", "facet": "level", "canonical_value": "Year 1", "lang": "en" },
+    { "term": "primary 6", "facet": "level", "canonical_value": "Year 6", "lang": "en" },
+
+    { "term": "junior 1", "facet": "level", "canonical_value": "Junior Middle 1", "lang": "en" },
+    { "term": "junior 2", "facet": "level", "canonical_value": "Junior Middle 2", "lang": "en" },
+    { "term": "junior 3", "facet": "level", "canonical_value": "Junior Middle 3", "lang": "en" },
+    { "term": "jm1", "facet": "level", "canonical_value": "Junior Middle 1", "lang": "en" },
+    { "term": "jm2", "facet": "level", "canonical_value": "Junior Middle 2", "lang": "en" },
+    { "term": "jm3", "facet": "level", "canonical_value": "Junior Middle 3", "lang": "en" },
+    { "term": "senior 1", "facet": "level", "canonical_value": "Senior Middle 1", "lang": "en" },
+    { "term": "senior 2", "facet": "level", "canonical_value": "Senior Middle 2", "lang": "en" },
+    { "term": "senior 3", "facet": "level", "canonical_value": "Senior Middle 3", "lang": "en" },
+    { "term": "sm1", "facet": "level", "canonical_value": "Senior Middle 1", "lang": "en" },
+    { "term": "sm2", "facet": "level", "canonical_value": "Senior Middle 2", "lang": "en" },
+    { "term": "sm3", "facet": "level", "canonical_value": "Senior Middle 3", "lang": "en" },
+
+    { "term": "add math", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "add maths", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "addmath", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "addmaths", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "add-math", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "adamath", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "adamaths", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "amaths", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "amath", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "a math", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "mixed" },
+    { "term": "matematik tambahan", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "ms" },
+    { "term": "mate tambahan", "facet": "subject", "canonical_value": "Additional Mathematics", "lang": "ms" },
+
+    { "term": "math", "facet": "subject", "canonical_value": "Mathematics", "lang": "en" },
+    { "term": "maths", "facet": "subject", "canonical_value": "Mathematics", "lang": "en" },
+    { "term": "matematik", "facet": "subject", "canonical_value": "Mathematics", "lang": "ms" },
+    { "term": "mate", "facet": "subject", "canonical_value": "Mathematics", "lang": "ms" },
+    { "term": "modern math", "facet": "subject", "canonical_value": "Mathematics", "lang": "mixed" },
+
+    { "term": "fizik", "facet": "subject", "canonical_value": "Physics", "lang": "ms" },
+    { "term": "kimia", "facet": "subject", "canonical_value": "Chemistry", "lang": "ms" },
+    { "term": "biologi", "facet": "subject", "canonical_value": "Biology", "lang": "ms" },
+    { "term": "bio", "facet": "subject", "canonical_value": "Biology", "lang": "mixed" },
+    { "term": "chem", "facet": "subject", "canonical_value": "Chemistry", "lang": "en" },
+    { "term": "phy", "facet": "subject", "canonical_value": "Physics", "lang": "en" },
+    { "term": "sains", "facet": "subject", "canonical_value": "Science", "lang": "ms" },
+    { "term": "sejarah", "facet": "subject", "canonical_value": "History", "lang": "ms" },
+    { "term": "geografi", "facet": "subject", "canonical_value": "Geography", "lang": "ms" },
+    { "term": "geo", "facet": "subject", "canonical_value": "Geography", "lang": "mixed" },
+    { "term": "ekonomi", "facet": "subject", "canonical_value": "Economics", "lang": "ms" },
+    { "term": "econs", "facet": "subject", "canonical_value": "Economics", "lang": "en" },
+    { "term": "perdagangan", "facet": "subject", "canonical_value": "Commerce", "lang": "ms" },
+    { "term": "seni", "facet": "subject", "canonical_value": "Art", "lang": "ms" },
+    { "term": "pendidikan seni", "facet": "subject", "canonical_value": "Art", "lang": "ms" },
+    { "term": "ict", "facet": "subject", "canonical_value": "Computer and Information Technology", "lang": "en" },
+    { "term": "komputer", "facet": "subject", "canonical_value": "Computer and Information Technology", "lang": "ms" },
+    { "term": "computer science", "facet": "subject", "canonical_value": "Computer and Information Technology", "lang": "en" },
+    { "term": "bahasa inggeris", "facet": "subject", "canonical_value": "English", "lang": "ms" },
+    { "term": "inggeris", "facet": "subject", "canonical_value": "English", "lang": "ms" },
+    { "term": "bahasa melayu", "facet": "subject", "canonical_value": "Bahasa Melayu", "lang": "ms" },
+    { "term": "bahasa malaysia", "facet": "subject", "canonical_value": "Bahasa Melayu", "lang": "ms" },
+    { "term": "prinsip akaun", "facet": "subject", "canonical_value": "Accounting", "lang": "ms" },
+    { "term": "akaun", "facet": "subject", "canonical_value": "Accounting", "lang": "ms" },
+
+    { "term": "selangor", "facet": "state", "canonical_value": "Selangor", "lang": "mixed" },
+    { "term": "shah alam", "facet": "state", "canonical_value": "Selangor", "lang": "mixed" },
+    { "term": "petaling jaya", "facet": "state", "canonical_value": "Selangor", "lang": "mixed" },
+    { "term": "pj", "facet": "state", "canonical_value": "Selangor", "lang": "mixed" },
+    { "term": "subang", "facet": "state", "canonical_value": "Selangor", "lang": "mixed" },
+    { "term": "kota kemuning", "facet": "state", "canonical_value": "Selangor", "lang": "mixed" },
+    { "term": "pulau pinang", "facet": "state", "canonical_value": "Penang", "lang": "ms" },
+    { "term": "penang", "facet": "state", "canonical_value": "Penang", "lang": "en" },
+    { "term": "georgetown", "facet": "state", "canonical_value": "Penang", "lang": "en" },
+    { "term": "johor", "facet": "state", "canonical_value": "Johor", "lang": "mixed" },
+    { "term": "johor bahru", "facet": "state", "canonical_value": "Johor", "lang": "mixed" },
+    { "term": "jb", "facet": "state", "canonical_value": "Johor", "lang": "mixed" },
+    { "term": "negeri sembilan", "facet": "state", "canonical_value": "Negeri Sembilan", "lang": "ms" },
+    { "term": "n9", "facet": "state", "canonical_value": "Negeri Sembilan", "lang": "ms" },
+    { "term": "seremban", "facet": "state", "canonical_value": "Negeri Sembilan", "lang": "ms" },
+    { "term": "sabah", "facet": "state", "canonical_value": "Sabah", "lang": "mixed" },
+    { "term": "kota kinabalu", "facet": "state", "canonical_value": "Sabah", "lang": "mixed" },
+    { "term": "kk", "facet": "state", "canonical_value": "Sabah", "lang": "mixed" },
+    { "term": "seluruh malaysia", "facet": "state", "canonical_value": "Malaysia", "lang": "ms" },
+    { "term": "nationwide", "facet": "state", "canonical_value": "Malaysia", "lang": "en" },
+    { "term": "multi state", "facet": "state", "canonical_value": "Multi-state", "lang": "en" },
+    { "term": "multistate", "facet": "state", "canonical_value": "Multi-state", "lang": "en" },
+
+    { "term": "hybrid", "facet": "delivery_mode", "canonical_value": "Hybrid", "lang": "en" },
+    { "term": "campuran", "facet": "delivery_mode", "canonical_value": "Hybrid", "lang": "ms" },
+    { "term": "online live", "facet": "delivery_mode", "canonical_value": "Online live", "lang": "en" },
+    { "term": "live online", "facet": "delivery_mode", "canonical_value": "Online live", "lang": "en" },
+    { "term": "online asynchronous", "facet": "delivery_mode", "canonical_value": "Online asynchronous", "lang": "en" },
+    { "term": "rakaman", "facet": "delivery_mode", "canonical_value": "Online asynchronous", "lang": "ms" },
+    { "term": "recorded", "facet": "delivery_mode", "canonical_value": "Online asynchronous", "lang": "en" },
+    { "term": "bootcamp", "facet": "delivery_mode", "canonical_value": "Physical bootcamp", "lang": "en" },
+    { "term": "personalised tuition", "facet": "delivery_mode", "canonical_value": "Personalised tuition", "lang": "en" },
+    { "term": "tuisyen personal", "facet": "delivery_mode", "canonical_value": "Personalised tuition", "lang": "ms" },
+
+    { "term": "english medium", "facet": "instruction_language", "canonical_value": "English", "lang": "en" },
+    { "term": "dlp", "facet": "instruction_language", "canonical_value": "English (DLP-style support)", "lang": "en" },
+    { "term": "mandarin chinese", "facet": "instruction_language", "canonical_value": "Mandarin Chinese", "lang": "en" },
+    { "term": "dwibahasa melayu inggeris", "facet": "instruction_language", "canonical_value": "Malay-English bilingual", "lang": "ms" },
+
+    { "term": "uec", "facet": "curriculum", "canonical_value": "UEC", "lang": "en" },
+    { "term": "kssr", "facet": "curriculum", "canonical_value": "KSSR / UASA", "lang": "ms" },
+
+    { "term": "sekolah rendah", "facet": "education_stage", "canonical_value": "Primary", "lang": "ms" },
+    { "term": "primary school", "facet": "education_stage", "canonical_value": "Primary", "lang": "en" },
+    { "term": "sekolah menengah", "facet": "education_stage", "canonical_value": "Secondary", "lang": "ms" },
+    { "term": "secondary school", "facet": "education_stage", "canonical_value": "Secondary", "lang": "en" }
+  ],
+
+  "ambiguous": [
+    {
+      "term": "chinese",
+      "facet": "subject",
+      "candidates": ["Bahasa Cina", "Chinese Language", "Mandarin"],
+      "note": "DD open question D5 — one concept or three? Ask, do not guess."
+    },
+    {
+      "term": "cina",
+      "facet": "subject",
+      "candidates": ["Bahasa Cina", "Chinese Language", "Mandarin"],
+      "note": "DD open question D5"
+    },
+    {
+      "term": "mandarin",
+      "facet": "subject",
+      "candidates": ["Mandarin", "Chinese Language", "Bahasa Cina"],
+      "note": "DD open question D5"
+    },
+    {
+      "term": "accounts",
+      "facet": "subject",
+      "candidates": ["Accounting", "Bookkeeping and Accounts"],
+      "note": "DD flags Accounting vs Bookkeeping and Accounts as overlapping."
+    },
+    {
+      "term": "accounting",
+      "facet": "subject",
+      "candidates": ["Accounting", "Bookkeeping and Accounts"],
+      "note": "DD overlapping pair"
+    },
+    {
+      "term": "malay",
+      "facet": "subject",
+      "candidates": ["Bahasa Melayu", "Malaysian Language"],
+      "note": "DD flags Bahasa Melayu vs Malaysian Language as overlapping."
+    },
+    {
+      "term": "bm",
+      "facet": "subject",
+      "candidates": ["Bahasa Melayu", "Malaysian Language"],
+      "note": "DD overlapping pair"
+    },
+    {
+      "term": "advanced math",
+      "facet": "subject",
+      "candidates": ["Advanced Mathematics I", "Advanced Mathematics II"],
+      "note": "Two graded variants; the user must pick."
+    },
+    {
+      "term": "spm",
+      "facet": "curriculum",
+      "candidates": ["KSSM / SPM", "SPM / KSSM"],
+      "note": "DD open question D2 — same value with operands swapped? Until Maggie/KahJun confirm, both are offered rather than silently merged."
+    },
+    {
+      "term": "kssm",
+      "facet": "curriculum",
+      "candidates": ["KSSM / SPM", "KSSM / UASA", "SPM / KSSM"],
+      "note": "KSSM spans two exam tracks."
+    },
+    {
+      "term": "uasa",
+      "facet": "curriculum",
+      "candidates": ["KSSM / UASA", "KSSR / UASA"],
+      "note": "UASA applies to both primary and secondary."
+    },
+    {
+      "term": "one to one",
+      "facet": "delivery_mode",
+      "candidates": ["Home one-to-one", "Online one-to-one", "Private one-to-one"],
+      "note": "Three distinct one-to-one modes in the corpus."
+    },
+    {
+      "term": "1 to 1",
+      "facet": "delivery_mode",
+      "candidates": ["Home one-to-one", "Online one-to-one", "Private one-to-one"],
+      "note": "Three distinct one-to-one modes"
+    },
+    {
+      "term": "seorang",
+      "facet": "delivery_mode",
+      "candidates": ["Home one-to-one", "Online one-to-one", "Private one-to-one"],
+      "note": "Three distinct one-to-one modes"
+    },
+    {
+      "term": "group",
+      "facet": "delivery_mode",
+      "candidates": ["Home small group", "Physical group", "Small group"],
+      "note": "Three distinct group modes."
+    },
+    {
+      "term": "kumpulan",
+      "facet": "delivery_mode",
+      "candidates": ["Home small group", "Physical group", "Small group"],
+      "note": "Three distinct group modes"
+    },
+    {
+      "term": "bilingual",
+      "facet": "instruction_language",
+      "candidates": ["Chinese-English bilingual", "Malay-English bilingual"],
+      "note": "Two bilingual pairings."
+    },
+    {
+      "term": "dwibahasa",
+      "facet": "instruction_language",
+      "candidates": ["Chinese-English bilingual", "Malay-English bilingual"],
+      "note": "Two bilingual pairings"
+    }
+  ],
+
+  "mode_group_terms": [
+    { "term": "online", "group": "online", "lang": "mixed" },
+    { "term": "dalam talian", "group": "online", "lang": "ms" },
+    { "term": "atas talian", "group": "online", "lang": "ms" },
+    { "term": "zoom", "group": "online", "lang": "mixed" },
+    { "term": "physical", "group": "physical", "lang": "en" },
+    { "term": "fizikal", "group": "physical", "lang": "ms" },
+    { "term": "bersemuka", "group": "physical", "lang": "ms" },
+    { "term": "face to face", "group": "physical", "lang": "en" },
+    { "term": "f2f", "group": "physical", "lang": "en" },
+    { "term": "offline", "group": "physical", "lang": "en" },
+    { "term": "datang kelas", "group": "physical", "lang": "ms" },
+    { "term": "home tuition", "group": "home", "lang": "en" },
+    { "term": "tuisyen rumah", "group": "home", "lang": "ms" },
+    { "term": "ke rumah", "group": "home", "lang": "ms" },
+    { "term": "home", "group": "home", "lang": "en" }
+  ],
+
+  "generic_terms": [
+    "tuisyen", "tuition", "kelas", "class", "les", "cari", "carik", "nak",
+    "ada", "tak", "je", "sahaja", "only", "untuk", "for", "anak", "budak",
+    "saya", "aku", "gua", "please", "tolong", "boleh", "yang", "di", "kat",
+    "dekat", "in", "at", "the", "a", "an"
+  ],
+
+  "intent_terms": {
+    "fee": [
+      "harga", "berapa harga", "kos", "bayaran", "fi", "fee", "fees", "price",
+      "murah", "mahal", "cheap", "affordable", "bajet", "budget", "rm",
+      "bawah rm", "under rm", "per bulan", "sebulan", "monthly fee", "diskaun"
+    ],
+    "schedule": [
+      "jadual", "jadwal", "schedule", "timetable", "waktu", "masa", "pukul",
+      "jam", "petang", "pagi", "malam", "tengah hari", "hujung minggu",
+      "weekend", "weekday", "hari sabtu", "hari ahad", "sabtu", "ahad",
+      "isnin", "selasa", "rabu", "khamis", "jumaat", "monday", "tuesday",
+      "wednesday", "thursday", "friday", "saturday", "sunday", "slot",
+      "sesi bila", "bila kelas", "what time", "when is", "any class on"
+    ],
+    "out_of_scope": [
+      "macam mana nak score", "how to score", "cara score", "tips belajar",
+      "tips study", "study tips", "teknik menjawab", "contoh soalan",
+      "past year", "ramalan soalan", "spot question", "motivasi",
+      "sejarah malaysia bila merdeka", "cuaca", "resepi", "bola"
+    ],
+    "distress": [
+      "stress", "stres", "tertekan", "give up", "putus asa", "tak sanggup",
+      "tak larat", "depressed", "depresi", "burnout", "cemas", "anxiety",
+      "menangis", "rasa bodoh", "malu sangat", "takut gagal", "tak nak hidup"
+    ],
+    "superlative": [
+      "terbaik", "paling bagus", "paling best", "which is best", "the best",
+      "recommend the best", "mana paling bagus", "paling berkualiti",
+      "rating", "review", "ranking"
+    ]
+  },
+
+  "language_hint_prefixes": [
+    "dalam", "in", "pengantar", "medium", "bahasa pengantar", "diajar dalam",
+    "taught in", "guna bahasa"
+  ]
+}

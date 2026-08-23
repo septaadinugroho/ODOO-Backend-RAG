@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+*.egg-info/
+build/
+dist/
+
+# Eval output
+eval/reports/
+
+# Keep the corpus out of git — it is curated data, loaded separately.
+data/*.csv
+!data/sample_corpus.csv

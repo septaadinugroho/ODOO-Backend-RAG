@@ -1,0 +1,48 @@
+# Plain PostgreSQL 16 — no pgvector.
+# PRD NFR-B (Skala dan Data): "Storage: Tabel relasional; belum menggunakan
+# vector DB di v1." Retrieval in v1 is deterministic SQL filtering, so the
+# vector extension is deliberately not installed.
+services:
+  postgres:
+    image: postgres:16
+    container_name: class-bot-postgres
+    environment:
+      POSTGRES_DB: classbot
+      POSTGRES_USER: classbot
+      POSTGRES_PASSWORD: classbot
+    ports:
+      # 5433 on the host: 5432 is already used by the python-backend-RAG project.
+      - "5433:5432"
+    volumes:
+      - class_bot_pgdata:/var/lib/postgresql/data
+      # Schema + closed vocabulary + the class corpus, generated from
+      # data/sample_corpus.csv by scripts/gen_sql.py. The postgres image runs
+      # everything in this directory in filename order the first time the data
+      # volume is created, so `docker compose up -d` alone produces a database
+      # that already answers queries — no pip install, no loader script.
+      #
+      # It runs *once*, on an empty volume. To rebuild from scratch:
+      #   docker compose down -v && docker compose up -d
+      # To load a different or larger corpus into a running database, use
+      # scripts/load_data.py instead.
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      # Deliberately stricter than `pg_isready`. During initialisation the
+      # postgres image starts a temporary server to run the files in
+      # docker-entrypoint-initdb.d, and pg_isready can answer "yes" while the
+      # seed is still loading. Requiring at least one class record means
+      # "healthy" is only reported once the database can actually serve a
+      # query, so anything waiting on this container never races the seed.
+      test:
+        - CMD-SHELL
+        - >-
+          pg_isready -U classbot -d classbot -q &&
+          psql -U classbot -d classbot -tAc 'SELECT count(*) FROM class_records'
+          | grep -qE '^[1-9][0-9]*$$'
+      interval: 5s
+      timeout: 10s
+      retries: 20
+      start_period: 30s
+
+volumes:
+  class_bot_pgdata:
